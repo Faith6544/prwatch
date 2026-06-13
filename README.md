@@ -45,3 +45,6 @@ go build -o prwatch .
 - Go
 - GitHub REST API
 - Groq API (llama-3.3-70b-versatile)
+## How it works
+
+prwatch polls your GitHub PRs every 30 seconds and suggests AI-powered replies to review comments.
