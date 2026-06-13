@@ -36,6 +36,7 @@ func githubGet(url, token string, out any) error {
 	defer resp.Body.Close()
 
 	body, _ := io.ReadAll(resp.Body)
+	fmt.Println("GitHub response:", string(body)) // debug line
 	return json.Unmarshal(body, out)
 }
 
